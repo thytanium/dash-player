@@ -1,25 +1,30 @@
 <html>
     <head>
-        <title>HTML5 MPEG-DASH Streaming Test</title>
+        <title>MPEG-DASH Streaming Test</title>
         <script src="https://cdn.dashjs.org/latest/dash.all.debug.js"></script>
         <style type="text/css">
-            body {
-                margin: 0;
-                padding: 0;
-                background-color: black;
-		color: white;
-            }
-	    a {
-		color: white;
-	    }
-	    video {
-		max-height: 100vh;
-	    }
+          body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        		color: white;
+          }
+    	    a {
+        		color: inherit;
+    	    }
+    	    video {
+            width: 100%;
+        		height: 80vh;
+    	    }
         </style>
     </head>
     <body>
-        <video data-dashjs-player="" autoplay="" width="100%" height="auto" controls="controls" src="/video/my_video_manifest.mpd">
+        <video data-dashjs-player="" autoplay="" controls="controls" src="/video/my_video_manifest.mpd">
         </video>
-	<a href="https://commons.wikimedia.org/wiki/File:Red_Bull_Racing_Pit_Stop_Practice.webm">ProtoplasmaKid</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
+	      <div>
+          <a href="https://commons.wikimedia.org/wiki/File:Red_Bull_Racing_Pit_Stop_Practice.webm">ProtoplasmaKid</a>,
+          <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>,
+          via Wikimedia Commons
+        </div>
     </body>
 </html>

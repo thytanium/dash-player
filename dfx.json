@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "ic_transcoder": {
+      "main": "src/ic_transcoder/main.mo",
+      "type": "motoko"
+    },
+    "ic_transcoder_assets": {
+      "dependencies": [
+        "ic_transcoder"
+      ],
+      "frontend": {
+        "entrypoint": "src/ic_transcoder_assets/src/index.html"
+      },
+      "source": [
+        "src/ic_transcoder_assets/assets",
+        "dist/ic_transcoder_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.10.0",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}

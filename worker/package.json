@@ -1,0 +1,19 @@
+{
+  "name": "ic_transcoder_worker",
+  "version": "1.0.0",
+  "description": "Transcoder service worker for the Internet Computer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@dfinity/agent": "^0.11.3",
+    "@ffmpeg/ffmpeg": "^0.10.1",
+    "btoa": "^1.2.1",
+    "bull": "^4.8.3",
+    "dotenv": "^16.0.1",
+    "node-fetch": "^3.2.6"
+  }
+}
